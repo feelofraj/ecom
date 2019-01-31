@@ -1,0 +1,26 @@
+
+ { "savingAccount": {
+    "accountNumber": "2014875541514",
+    "accountType": "saving",
+    "branch": "New York",
+    "name": "John Smith",
+    "ccy": "US Dollar",
+    "availableBalance": "4500.87"
+  },
+  "currentAccount": {
+    "accountNumber": "20148755415145",
+    "accountType": "current",
+    "branch": "Dallas",
+    "name": "John Smith",
+    "ccy": "US Dollar",
+    "availableBalance": "2000.06"
+  },
+  "currentAccount1": {
+    "accountNumber": "2014875541515",
+    "accountType": "current",
+    "branch": "Washington",
+    "name": "John Smith",
+    "ccy": "US Dollar",
+    "availableBalance": "1500.87"
+  }
+}

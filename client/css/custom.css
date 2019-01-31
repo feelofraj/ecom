@@ -1,0 +1,105 @@
+body
+{
+    background-color: azure;
+}
+.nav
+{
+    background-color: rgb(180, 198, 204);
+    color: rgb(23, 24, 23);
+}
+.Logo
+{
+    /* margin-right: 2%; */
+}
+#Header
+{
+    background-color: darkgrey;
+}
+.HeaderMenu
+{
+display: auto;
+}
+menu
+{
+  float: right;
+}
+.pageContent
+{
+    width: 100%;
+    padding: 4px;
+    display: flex;
+}
+
+.filterMenu
+{
+    
+    margin: 3px;
+    /* padding:0px 0px 10px 10px; */
+    max-width: 13%;
+    flex:0 0 13%;
+   max-height: 10%;
+    background-color: azure;
+    border:1px solid rgb(180, 198, 204);
+    
+    
+}
+.filterMenu h4
+{
+    
+    text-align: center;
+    font-size: x-large;
+    border-bottom: 1px outset rgb(245, 249, 252);
+    
+}
+.filterCont 
+{
+    display:flex;
+    
+}
+
+.filterCont ul
+{
+    
+    list-style: none;
+    margin: 0;
+    padding-left: 1px;
+    
+     
+}    
+.filterCont ul li
+{
+    background-color: rgb(236, 234, 234);
+    color: gray;
+    display: flex;
+    margin-left: 0px;
+    margin-right: 2px;
+}
+.renderPage
+{
+    width: 86%;
+    flex:0 0 86%;
+    padding: 4px;
+    margin: 3px;
+    background-color: aliceblue;
+    border:1px solid rgb(180, 198, 204)
+}
+.content
+{
+    margin-top:4%;  
+}
+/* payment */
+.payment 
+{
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-weight: 500;
+font-style: normal;
+background-color: white;
+}
+.payment h4
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    font-variant-caps: all-petite-caps;
+    
+    
+}

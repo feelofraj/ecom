@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title>Register</title>
+</head>
+
+<body ng-app="myApp">
+    <div class="col-sm-6">
+        <form class="form-group" style="font-size: 20px" name="registerForm" validate>
+
+
+            <table class="table-borderless">
+                <th class="table-header" style="font-size: 40px">Join Us</th>
+                <tr>
+                    <td class="text-danger" ng-if="error" ng-bind="errMsg"></td>
+                </tr>
+                <tr>
+                    <td><label>Name</label></td>
+                    <td><input class="form-group" type="text"  ng-model="registerForm.Name" required></td>
+                </tr>
+                <tr>
+                    <td><label>User Id</label></td>
+                    <td><input class="form-group"  type="text" ng-model="registerForm.userId" required></td>
+                </tr>
+                <tr>
+                        <td><label>Enter  Password</label></td>
+                        <td><input class="form-group"  type="password" ng-model="registerForm.password1" name="password1" required></td>
+                </tr>
+                <tr>
+                        <td><label>Re-Enter  Password</label></td>
+                        <td><input class="form-group"  type="password" ng-model="registerForm.Retypepassword" name="Retypepassword" required>
+                        <span class="text-danger" ng-show="registerForm.password1 != registerForm.Retypepassword && registerForm.password1.$touched && registerForm.Retypepassword.$touched">Both password must watch</span></td>
+                </tr>
+                <tr>
+                        <td><label>Email</label></td>
+                        <td><input class="form-group" type="email" ng-model="registerForm.email1" name="email1" required></td>
+                </tr>
+                <tr>
+                        <td><label>Mobile Number</label></td>
+                        <td><input class="form-group" name="phoneNum" type="text" ng-model="registerForm.phoneNum" required></td>
+                </tr>
+                
+                <tr>
+                    <td><button class="btn btn-success mt-2" type="submit" ng-enabled="registerForm.password1 == registerForm.Retypepassword" ng-click="register ()">Register Now</button>
+                        <button class="btn btn-primary mt-2" ui-sref="home">Cancel</button>
+                    </td>
+
+                </tr>
+               
+            </table>
+
+
+        </form>
+    </div>
+    <div class="col-sm-6">
+
+    </div>
+</body>
+
+</html>

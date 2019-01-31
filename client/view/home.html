@@ -1,0 +1,10 @@
+<div class="container" ng-app="myApp">
+    <div class="d-flex flex-column">
+        <p>Welcome back {{user}}</p>
+        <a ng-if="!userLoggedOut" ui-sref="login">Logout</a>
+    </div>
+    <div ng-if="userLoggedOut">
+        <button class="btn" ng-click="loginView()">Continue to Login</button>
+    </div>
+
+</div>

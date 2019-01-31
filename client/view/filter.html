@@ -1,0 +1,9 @@
+<div>
+    <h4>Header</h4>
+    <div class="filterCont">
+        <ul ng-repeat="filt in selectedFilter">
+            <li class="filtVal ">{{filt}}<i class="fa fa-window-close" aria-hidden="true"></i></li>
+            <br ng-if="$index % 2">
+        </ul>
+    </div>
+</div>

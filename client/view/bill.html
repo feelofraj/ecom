@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>Search</title>
+ </head>
+<body>
+    <form id="myForm">
+        <!-- <div class="col justify-content-end"></div>  
+        <input class="form-control-sm align-content-end" type="text" ng-model="searchTxt" placeholder="search">
+        orderBy: 'myOrder' | 
+    </div> -->
+        <input class="form-control-sm align-content-end" type="text" ng-model="searchTxt" placeholder="search">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Transaction Type<i class="fas fa-caret-down ml-2" ng-click="order('type')"></i></th>
+                    <th>From Account<i class="fas fa-caret-down ml-2" ng-click="order('fromaccount')"></i></th>
+                    <th>To Account <i class="fas fa-caret-down ml-2" ng-click="order('toaccount')"></i></th>
+                    <th>Description<i class="fas fa-caret-down ml-2" ng-click="order('description')"></i></th>
+                    <th>Amount<i class="fas fa-caret-down ml-2" ng-click="order('amount')"></i></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="case"  ng-repeat="sdata in searchTransactionData | orderBy:myOrder | filter: searchTxt" ng-if="sData">
+                    <td>{{sdata.type}}</td>
+                    <td>{{sdata.fromaccount}}</td>
+                    <td>{{sdata.toaccount}}</td>
+                    <td>{{sdata.description}}</td>
+                    <td>{{sdata.amount}}</td>
+                </tr>
+                <tr class="case" ng-if="!sData">
+                        <td colspan="5" >No Records found</td>
+                    </tr>
+            </tbody>
+            <!-- <tfoot>
+                    <tr style="border-block-end: darkorange">
+                      <td colspan="5" class="text-center">
+                        <div st-pagination="" st-items-by-page="itemsByPage" st-displayed-pages="7"></div>
+                      </td>
+                    </tr>
+                  </tfoot> -->
+        </table>
+    </form>
+
+</body>
+
+</html>
